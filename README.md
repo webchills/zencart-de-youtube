@@ -59,16 +59,3 @@ Lautet der Link zum Video z.B.
 https://www.youtube.com/watch?v=tBHMzCOn2Sk
 Dann wäre einzugeben:
 tBHMzCOn2Sk
-
-5.
-Um das Video auf der Artikeldetailseite an einer anderen Stelle anzuzeigen, folgenden Abschnitt in der icludes/templates/DEINTEMPLATE/templates/tpl_product_info_display.php an eine andere gewünschte Stelle plazieren:
-<!--bof YouTube -->
-<?php if (zen_not_null($products_youtube)) {
-if ($flag_show_product_info_youtube == 1) {
-?>
-<?php echo '<div id="productYouTube"><iframe src="https://www.youtube-nocookie.com/embed/' . $products_youtube . '?rel=0&showinfo=0&fs=0" frameborder="0" allowfullscreen></iframe></div>'; ?>
-<?php
-    } 
-  }
-?>
-<!--eof YouTube -->
